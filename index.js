@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-app.listen(2000, () => console.log("Listening... at 2000"));
+app.listen(process.env.PORT || 4000, () => console.log("Listening... at 2000"));
 app.use(express.static("public"));
 
 app.get('/monsters', async (request, response) => {
