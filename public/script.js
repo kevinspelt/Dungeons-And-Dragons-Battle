@@ -71,7 +71,7 @@ function sortTable(tbody) {
         let shouldSwitch = false;
         switching = false;
         const rows = tbody.rows;
-        for(i = 1; i < (rows.length - 1); i++) {
+        for(i = 0; i < (rows.length - 1); i++) {
             const x = rows[i].getElementsByTagName('td')[2].getElementsByTagName('input')[0].value;
             const y = rows[i + 1].getElementsByTagName('td')[2].getElementsByTagName('input')[0].value;
             if(Number(x) > Number(y)) {
